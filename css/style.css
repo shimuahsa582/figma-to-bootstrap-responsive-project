@@ -54,6 +54,7 @@ nav {
   position: absolute !important;
   width: 100%;
   top: 50px;
+  z-index: 999;
 }
 nav .navbar-nav .nav-link {
   font-family: "Inter", sans-serif;
@@ -99,19 +100,55 @@ nav .navbar-nav .nav-item:first-child {
 }
 /* ***************navbar part end **************/
 /************** banner part start **************/
-#bannerPart {
+#banner_slider{
+  position: relative;
+}
+#banner_slider ul{
+  position: absolute;
+  left: 50%;
+  bottom: 53px;
+  transform: translateX(-50%);
+  display: flex;
+}
+#banner_slider ul li{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #4756df;
+  border: 4px solid #4756df;
+  margin: 0 1px;
+}
+#banner_slider ul .slick-active{
+  border-color: #ffffff;
+}
+#banner_slider ul li button{
+  display: none;
+}
+#banner_slider .banner_01 {
   background: url(../images/banner.jpg) no-repeat center;
   background-size: cover;
 }
-#bannerPart .overly {
+#banner_slider .banner_02 {
+  background: url(../images/banner2.jpg) no-repeat center;
+  background-size: cover;
+}
+#banner_slider .banner_03 {
+  background: url(../images/banner3.jpg) no-repeat center;
+  background-size: cover;
+}
+#banner_slider .banner_04 {
+  background: url(../images/banner4.jpg) no-repeat center;
+  background-size: cover;
+}
+#banner_slider .bannerPart .overly {
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   padding: 315px 0 176px;
 }
-#bannerPart .overly .main {
+#banner_slider .bannerPart .overly .main {
   text-align: center;
 }
-#bannerPart .overly .main h1 {
+#banner_slider .bannerPart .overly .main h1 {
   width: 950px;
   line-height: 120%;
   color: #ffffff;
@@ -120,7 +157,7 @@ nav .navbar-nav .nav-item:first-child {
   text-align: center;
   margin: 0 auto;
 }
-#bannerPart .overly .main p {
+#banner_slider .bannerPart .overly .main p {
   line-height: 26px;
   width: 621px;
   margin: 51px auto 40px;
@@ -129,7 +166,7 @@ nav .navbar-nav .nav-item:first-child {
   font-size: 16px;
   text-align: center;
 }
-#bannerPart .overly .main a {
+#banner_slider .bannerPart .overly .main a {
   line-height: 26px;
   display: inline-block;
   padding: 15px 42px;
@@ -145,7 +182,7 @@ nav .navbar-nav .nav-item:first-child {
   color: #ffffff;
   transition: 0.3s;
 }
-#bannerPart .overly .main a:hover {
+#banner_slider .bannerPart .overly .main a:hover {
   background: none;
   border: 1px solid white;
 }
@@ -332,6 +369,35 @@ nav .navbar-nav .nav-item:first-child {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+#clientPart .client_01 .prev{
+position: absolute;
+left: 0;
+top: 50%;
+transform: translate(-50% ,-50%);
+width: 40px;
+height: 40px;
+line-height: 40px;
+border-radius: 50%;
+text-align: center;
+background: #4756df;
+color: #ffffff;
+z-index: 999;
+}
+#clientPart .client_01 .next{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50% ,-50%);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background: #4756df;
+  color: #ffffff;
+  z-index: 999; 
 }
 #clientPart .clientDetails .clientSingelIcon {
   font-size: 58px;

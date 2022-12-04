@@ -1,8 +1,5 @@
 /******** extra small device ar jonno code *****************/
 @media (min-width: 0px) and (max-width: 575.98px) {
-  section#clientPart {
-    display: none;
-  }
   button.navbar-toggler i {
     color: white;
   }
@@ -134,8 +131,19 @@
   #agencyPart .agencyImg {
     display: none;
   }
+  section#clientPart {
+    display: block;
+  }
   #clientPart .title p {
     margin-bottom: 20px;
+  }
+  #clientPart .clientDetails p {
+    font-size: 15px;
+    line-height: 25px;
+    width: auto;
+  }
+  #clientPart .clientDetails .clientBottomDt {
+    margin-top: 14px;
   }
   #formPart {
     padding: 40px 0px;
@@ -201,9 +209,6 @@
 }
 /********small device ar jonno****************/
 @media (min-width: 576px) and (max-width: 767px) {
-  section#clientPart {
-    display: none;
-  }
   button.navbar-toggler i {
     color: white;
   }
@@ -335,8 +340,20 @@
   #agencyPart .agencyImg {
     display: none;
   }
+  section#clientPart {
+    display: block;
+  }
   #clientPart .title p {
     margin-bottom: 20px;
+    padding: 0 45px;
+  }
+  #clientPart .clientDetails p {
+    font-size: 15px;
+    line-height: 25px;
+    width: auto;
+  }
+  #clientPart .clientDetails .clientBottomDt {
+    margin-top: 14px;
   }
   #formPart {
     padding: 40px 0px;
@@ -411,9 +428,6 @@
     margin: 0;
     height: 100%;
     overflow-x: hidden;
-  }
-  section#clientPart {
-    display: none;
   }
   button.navbar-toggler i {
     color: white;
@@ -546,8 +560,23 @@
   #agencyPart .agencyImg {
     display: none;
   }
+  section#clientPart {
+    display: block;
+  }
   #clientPart .title p {
     margin-bottom: 20px;
+    padding: 0 125px;
+  }
+  #clientPart .clientDetails {
+    padding: 54px 12px;
+  }
+  #clientPart .clientDetails p {
+    font-size: 15px;
+    line-height: 25px;
+    width: auto;
+  }
+  #clientPart .clientDetails .clientBottomDt {
+    margin-top: 14px;
   }
   #formPart {
     padding: 55px 0px;
@@ -742,8 +771,23 @@
     height: 100%;
     text-align: center;
   }
+  section#clientPart {
+    display: block;
+  }
   #clientPart .title p {
     margin-bottom: 20px;
+    padding: 0 125px;
+  }
+  #clientPart .clientDetails {
+    padding: 54px 12px;
+  }
+  #clientPart .clientDetails p {
+    font-size: 15px;
+    line-height: 25px;
+    width: auto;
+  }
+  #clientPart .clientDetails .clientBottomDt {
+    margin-top: 14px;
   }
   #formPart {
     padding: 55px 0px;

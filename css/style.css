@@ -365,15 +365,48 @@ nav .navbar-nav .nav-item:first-child {
   width: 620px;
   margin: 20px auto 78px;
 }
+#clientPart .item{
+  margin: 0 12px;
+}
 #clientPart .client_01 {
   width: 100%;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
+#clientPart .clientDetails_01{
+  padding: 54px 58px;
+background: #ffffff;
+transition: .3s;
+}
+#clientPart .clientDetails_02{
+  padding: 54px 58px;
+  background: #ffffff;
+  transition: .3s;
+}
+#clientPart .clientDetails_03{
+  padding: 54px 58px;
+  background: #ffffff;
+  transition: .3s;
+}
+#clientPart .clientDetails_04{
+  padding: 54px 58px;
+  background: #ffffff;
+  transition: .3s;
+}
+#clientPart .clientDetails_05{
+  padding: 54px 58px;
+  background: #ffffff;
+  transition: .3s;
+}
+#clientPart .slick-center{
+  background: #f4efef;
+  border-radius: 30px;
+  transform: scale(1.1);
+}
 #clientPart .client_01 .prev{
 position: absolute;
-left: 0;
+left: 12px;
 top: 50%;
 transform: translate(-50% ,-50%);
 width: 40px;
@@ -387,7 +420,7 @@ z-index: 999;
 }
 #clientPart .client_01 .next{
   position: absolute;
-  right: 0;
+  right: 12px;
   top: 50%;
   transform: translate(50% ,-50%);
   width: 40px;
@@ -406,10 +439,10 @@ z-index: 999;
 #clientPart .clientDetails {
   padding: 54px 58px;
 }
-#clientPart .clientDetails.active {
+/* #clientPart .clientDetails.active {
   background: #f4efef;
   border-radius: 30px;
-}
+} */
 #clientPart .clientDetails p {
   width: 307px;
   font-weight: 400;

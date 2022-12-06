@@ -5,24 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figma to bootstrap project</title>
-    <!---------- set a icon in broswer ------------>
-    <link rel="icon" href="images/logo.png">
-    <!-------------all  google fonts link--------------- -->
+    <!---========================= set a icon in broswer =========================-->
+    <link rel="icon" href="images/logo.png" />
+    <!---=========================all  google fonts link-=========================-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- -----------all css link----------------- -->
+    <!--=========================all css link=========================-->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/venobox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <!---------- top navbar part----------- -->
+    <a id="button"></a>
+    <!---========================= top navbar part========================= -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <img src="images/logo.png" alt="logo.png" />
@@ -61,8 +63,8 @@
         </div>
       </div>
     </nav>
-    <!----------- top navbar part end------------>
-    <!---------------- banner part start------------->
+    <!---========================= top navbar part end=========================--->
+    <!---========================= banner part start=========================--->
     <section id="banner_slider">
       <div class="bannerPart banner_01">
         <div class="overly">
@@ -145,8 +147,8 @@
         </div>
       </div>
     </section>
-    <!------------ banner part end ------------------->
-    <!------------ counter part start------------------>
+    <!---========================= banner part end =========================--->
+    <!---========================= counter part start=========================--->
     <section id="counterPart">
       <div class="container">
         <div class="counterMain">
@@ -160,15 +162,15 @@
             <div class="col-lg-8 col-md-12">
               <div class="right">
                 <div class="counter">
-                  <h2>200+</h2>
+                  <h2><span class="count">200</span>+</h2>
                   <p>Customer Satisfied</p>
                 </div>
                 <div class="counter">
-                  <h2>4.5</h2>
+                  <h2><span class="count">4.5</span></h2>
                   <p>200+ Avg rating</p>
                 </div>
                 <div class="counter">
-                  <h2>351+</h2>
+                  <h2><span class="count">351</span>+</h2>
                   <p>Project Delivered</p>
                 </div>
               </div>
@@ -177,8 +179,8 @@
         </div>
       </div>
     </section>
-    <!----------------- counter part end -------------------->
-    <!------------------- service part start ---------------->
+    <!----========================= counter part end =========================--->
+    <!-----========================= service part start =========================--->
     <section id="service">
       <div class="title">
         <h2>Our Provided Services</h2>
@@ -276,8 +278,8 @@
         </div>
       </div>
     </section>
-    <!------------- service part end ----------------->
-    <!-------------- recent part start ------------------>
+    <!---========================= service part end =========================---->
+    <!----========================= recent part start =========================--->
     <section id="recentPart">
       <div class="title">
         <h2>Our Recent Work</h2>
@@ -363,8 +365,8 @@
         </div>
       </div>
     </section>
-    <!-------------- recent part end -------------------->
-    <!-------------- agency part start ------------------>
+    <!---=========================  recent part end =========================---->
+    <!---========================= agency part start =========================--->
     <section id="agencyPart">
       <div class="title">
         <h2>Why You Should Choose agency</h2>
@@ -421,15 +423,15 @@
             </div>
           </div>
           <div class="col-lg-4">
-           <div class="agencyImage">
-            <img class="agencyImg" src="images/agenc3.png" alt="agenc3.png" />
-           </div>
+            <div class="agencyImage">
+              <img class="agencyImg" src="images/agenc3.png" alt="agenc3.png" />
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!---------------- agency part end------------------->
-    <!---------------- client part start----------------->
+    <!---========================= agency part end=========================---->
+    <!---========================= client part start=========================--->
     <section id="clientPart">
       <div class="title">
         <h2>Some Client Reviews</h2>
@@ -553,13 +555,20 @@
         </div>
       </div>
     </section>
-    <!-------------- client part end------------------->
-    <!-------------- form part start-------------------->
+    <!---========================= client part end =============================--->
+    <!---========================= form part start=========================-->
     <section id="formPart">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-5">
             <div class="text">
+              <a
+                class="my-video-links"
+                data-autoplay="true"
+                data-vbtype="video"
+                href="https://youtu.be/GogcDtMpgMc"
+                >Play Video</a
+              >
               <h2>We Do design, Code & Development</h2>
               <p>
                 I had a good experience while using this app, what fascinated me
@@ -589,8 +598,8 @@
         </div>
       </div>
     </section>
-    <!------------- form part end ----------------->
-    <!-- -----------contact part start --------------->
+    <!---========================= form part end =========================--->
+    <!-- =========================contact part start =========================--->
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -607,41 +616,41 @@
           <div class="col-lg-2 col-6">
             <div class="contactDivider">
               <h2>About</h2>
-            <ul>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <a href="#">News</a>
-              </li>
-              <li>
-                <a href="#">Careers</a>
-              </li>
-            </ul>
-               </div>
+              <ul>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Features</a>
+                </li>
+                <li>
+                  <a href="#">News</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="col-lg-2 col-6">
             <div class="contactDivider">
               <h2>Company</h2>
-            <ul>
-              <li>
-                <a href="#">Our Team</a>
-              </li>
-              <li>
-                <a href="#">Partner With Us</a>
-              </li>
-              <li>
-                <a href="#">FAQ</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-            </ul>
-               </div>
+              <ul>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Partner With Us</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="col-lg-2 col-6">
@@ -670,21 +679,21 @@
           <div class="col-lg-2 col-6">
             <div class="contactDivider">
               <h2>Get in touch</h2>
-            <ul>
-              <li>
-                <a href="#">info@gmail.com</a>
-              </li>
-              <li>
-                <a href="#">+88 0121 0212</a>
-              </li>
-            </ul>
+              <ul>
+                <li>
+                  <a href="#">info@gmail.com</a>
+                </li>
+                <li>
+                  <a href="#">+88 0121 0212</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!------------------contact part end----------------->
-    <!---------------- footer part start------------------>
+    <!----=========================contact part end=========================---->
+    <!---========================= footer part start=========================-->
     <footer id="footer">
       <div class="container">
         <div class="borderTop">
@@ -692,10 +701,13 @@
         </div>
       </div>
     </footer>
-    <!--------------- footer part end ------------------>
+    <!---========================= footer part end =========================--->
 
-    <!-- js all link -->
+    <!--========================= js all link =========================-->
     <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/venobox.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

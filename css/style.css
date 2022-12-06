@@ -48,6 +48,42 @@ p {
   color: #737373;
 }
 /************* common css end***************** */
+#button {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* **************navbar part start *************/
 nav {
   background: transparent;
@@ -100,17 +136,17 @@ nav .navbar-nav .nav-item:first-child {
 }
 /* ***************navbar part end **************/
 /************** banner part start **************/
-#banner_slider{
+#banner_slider {
   position: relative;
 }
-#banner_slider ul{
+#banner_slider ul {
   position: absolute;
   left: 50%;
   bottom: 53px;
   transform: translateX(-50%);
   display: flex;
 }
-#banner_slider ul li{
+#banner_slider ul li {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -118,10 +154,10 @@ nav .navbar-nav .nav-item:first-child {
   border: 4px solid #4756df;
   margin: 0 1px;
 }
-#banner_slider ul .slick-active{
+#banner_slider ul .slick-active {
   border-color: #ffffff;
 }
-#banner_slider ul li button{
+#banner_slider ul li button {
   display: none;
 }
 #banner_slider .banner_01 {
@@ -202,7 +238,7 @@ nav .navbar-nav .nav-item:first-child {
   font-size: 25px;
   line-height: 120%;
   color: #6a4df4;
-  text-align:start; 
+  text-align: start;
 }
 #counterPart .counterMain .text h2 {
   font-weight: 600;
@@ -239,7 +275,7 @@ nav .navbar-nav .nav-item:first-child {
 #service {
   margin-bottom: 50px;
 }
-#service .title p{
+#service .title p {
   width: 609px;
   margin: 20px auto 50px;
 }
@@ -365,7 +401,7 @@ nav .navbar-nav .nav-item:first-child {
   width: 620px;
   margin: 20px auto 78px;
 }
-#clientPart .item{
+#clientPart .item {
   margin: 0 12px;
 }
 #clientPart .client_01 {
@@ -374,55 +410,41 @@ nav .navbar-nav .nav-item:first-child {
   justify-content: space-between;
   position: relative;
 }
-#clientPart .clientDetails_01{
-  padding: 54px 58px;
-background: #ffffff;
-transition: .3s;
-}
-#clientPart .clientDetails_02{
+#clientPart .clientDetails_01 {
   padding: 54px 58px;
   background: #ffffff;
-  transition: .3s;
+  transition: 0.3s;
 }
-#clientPart .clientDetails_03{
+#clientPart .clientDetails_02 {
   padding: 54px 58px;
   background: #ffffff;
-  transition: .3s;
+  transition: 0.3s;
 }
-#clientPart .clientDetails_04{
+#clientPart .clientDetails_03 {
   padding: 54px 58px;
   background: #ffffff;
-  transition: .3s;
+  transition: 0.3s;
 }
-#clientPart .clientDetails_05{
+#clientPart .clientDetails_04 {
   padding: 54px 58px;
   background: #ffffff;
-  transition: .3s;
+  transition: 0.3s;
 }
-#clientPart .slick-center{
+#clientPart .clientDetails_05 {
+  padding: 54px 58px;
+  background: #ffffff;
+  transition: 0.3s;
+}
+#clientPart .slick-center {
   background: #f4efef;
   border-radius: 30px;
   transform: scale(1.1);
 }
-#clientPart .client_01 .prev{
-position: absolute;
-left: 12px;
-top: 50%;
-transform: translate(-50% ,-50%);
-width: 40px;
-height: 40px;
-line-height: 40px;
-border-radius: 50%;
-text-align: center;
-background: #4756df;
-color: #ffffff;
-z-index: 999;
-}
-#clientPart .client_01 .next{
+#clientPart .client_01 .prev {
   position: absolute;
-  right: 12px;
+  left: 12px;
   top: 50%;
-  transform: translate(50% ,-50%);
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -430,7 +452,21 @@ z-index: 999;
   text-align: center;
   background: #4756df;
   color: #ffffff;
-  z-index: 999; 
+  z-index: 999;
+}
+#clientPart .client_01 .next {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background: #4756df;
+  color: #ffffff;
+  z-index: 999;
 }
 #clientPart .clientDetails .clientSingelIcon {
   font-size: 58px;
@@ -439,10 +475,6 @@ z-index: 999;
 #clientPart .clientDetails {
   padding: 54px 58px;
 }
-/* #clientPart .clientDetails.active {
-  background: #f4efef;
-  border-radius: 30px;
-} */
 #clientPart .clientDetails p {
   width: 307px;
   font-weight: 400;
@@ -610,3 +642,22 @@ h5 {
   padding: 20px 0px;
 }
 /******************** footer part end ********************/
+/* *******************Video added code*****************/
+.vbox-content {
+  text-align: center;
+  width: 36%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+.vbox-item {
+  border: 1px solid #f8dbdb;
+  background: #f8e7e7;
+  color: #836d6d;
+  padding: 6px 15px;
+  border-radius: 4px;
+}
